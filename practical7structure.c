@@ -9,7 +9,7 @@ struct emp
 int main(){
     struct emp e[10];
     for(int i=0;i<10;i++){
-        printf("enter salary no:");
+        printf("enter salary no for emp no %d:",i);
         scanf("%d",&e[i].sal);
         printf("Enter empname:");
         scanf("%s",e[i].empname);
