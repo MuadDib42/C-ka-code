@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// make your own text files 
 int main() {
     int flag = 0;
     FILE *ptr;
