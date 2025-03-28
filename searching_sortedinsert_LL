@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+struct node{
+    int element;
+    struct node*link;
+}
+int size=0;
+struct node * pos_traverser(struct node * head,int pos){
+    struct node * ptr=head;
+    while(ptr!=NULL && pos >0){
+        ptr=ptr->link;
+        pos--;
+    }
+    return ptr;
+}
+void search(struct node * head,int data){
+    int count=0;
+    struct node *ptr=head;
+    while(ptr!=NULL && ptr->element!=data){
+        ptr=ptr->link;
+        count++;
+    }
+}
+void insert(struct node ** head, int data, int pos){
+    if(pos==1){
+        struct node * ptr=*head;
+        struct node * ptr2=malloc(sizeof(struct node));
+        if(ptr->element<data){
+
+        }
+    }else if(pos>1 && pos<size){
+        
+    }else{
+
+    }
+    //sorting
+}
+void main(){
+
+}
